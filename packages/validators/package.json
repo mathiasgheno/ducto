@@ -1,0 +1,27 @@
+{
+  "name": "@ducto/validators",
+  "version": "0.0.1",
+  "description": "Validators of ducto library",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathiasgheno/ducto.git"
+  },
+  "keywords": [
+    "ducto",
+    "validators"
+  ],
+  "author": "Mathias Gheno Azzolini",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mathiasgheno/ducto/issues"
+  },
+  "homepage": "https://github.com/mathiasgheno/ducto#readme",
+  "dependencies": {
+    "loglevel": "^1.8.0"
+  }
+}

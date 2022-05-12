@@ -1,0 +1,25 @@
+{
+  "name": "@ducto/core",
+  "version": "0.0.1",
+  "description": "Core functions for ducto",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathiasgheno/ducto.git"
+  },
+  "keywords": [
+    "ducto",
+    "pipeline",
+    "validator"
+  ],
+  "author": "Mathias Gheno Azzolini",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mathiasgheno/ducto/issues"
+  },
+  "homepage": "https://github.com/mathiasgheno/ducto#readme"
+}
