@@ -10,6 +10,6 @@ export const ducto = (...filters) => {
       property
     );
     log.debug(`Final result of pipe: ${JSON.stringify(finalResult)}`);
-    return finalResult?.length > 0;
+    return finalResult;
   }
 }

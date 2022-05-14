@@ -1,6 +1,6 @@
-# Duto
+# Ducto.js
 
-Duto.js is an next genation of pipeline validor.
+Ducto.js is an next genation of pipeline validor.
 
 - ✅ Functional API
 - ✅ Support for ECMAScript Pipeline Operator

@@ -1,1 +1,0 @@
-export { ducto } from './ducto';
