@@ -6,7 +6,7 @@ export const isString = (value) => {
   const isNotString = typeof possibleString !== 'string';
   log.debug(`isNotString: ${isNotString}`);
   if(isNotString) {
-    throw new Error(`Value ${possibleString} is not an string`);
+    throw new Error(`Value is not an string`);
   }
   return value;
 };
