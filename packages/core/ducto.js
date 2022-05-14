@@ -1,15 +1,32 @@
 import log from 'loglevel';
 
+class ValidatorError extends Error {
+  constructor(error, debug) {
+    super(error);
+    this.name = 'ValidatorError';
+    this.debug = debug;
+  }
+}
+
+
+const reducer = (value, validator, index) => {
+  try {
+    return validator(value);
+  } catch (error) {
+    throw new ValidatorError(error, {
+      validator: validator.name,
+      receivedValue: value,
+      valodatorQueue: index,
+    });
+  }
+};
+
 export const ducto = (...filters) => {
-  return property => {
-    log.debug(`Receiving from pipe: ${JSON.stringify(property)}`);
-    const finalResult = filters.reduce(
-      (acc, fn) => {
-        return fn(acc);
-      },
-      property
-    );
-    log.debug(`Final result of pipe: ${JSON.stringify(finalResult)}`);
-    return finalResult;
+  log.info('ducto was been executed');
+  log.debug(filters);
+  return value => {
+    log.info('Applying validators');
+    log.debug(value);
+    return filters.reduce(reducer, value);
   }
 }
