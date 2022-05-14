@@ -1,56 +1,49 @@
-# Ducto.js
 
-Ducto.js is an next genation of pipeline validor.
+<p align="center">
+  <img alt="Lerna" src="https://i.imgur.com/p70zxaD.png" width="480">
+</p>
+
+Ducto.js is an next generation of pipeline validator.
 
 - ✅ Functional API
-- ✅ Support for ECMAScript Pipeline Operator
-- ✅ Support for ECMAScript Decorators
+- ✅ Support for ECMAScript Pipeline Operator (WIP)
+- ✅ Support for ECMAScript Decorators  (WIP)
 
+## Install
+
+```bash
+npm install @ducto/core @ducto/validators
+```
 
 ## How to Use
 
 ```javascript
-import { ducto, prop } from '@ducto/core';
-import { isNotNull, isString, hasLessCharacteresThan, minimalNumberOfProps } from '@ducto/validators';
+import { ducto } from '@ducto/core';
+import {
+  isString,
+  isNotNull,
+  hasLessCharactersThan,
+  hasMoreCharactersThan,
+} from '@ducto/validators';
 
-class Toggle {
-
-  @ducto(toggle => (
-    toggle
-      |> prop('description', (description) => (
-            description
-              |> isNotNull
-              |> isString
-              |> hasLessCharacteresThan(1000)
-         ))
-      |> minimalNumberOfProps(10)
-  ))
-  insert(toggle) {
-    
-  }  
-}
-```
-
-```javascript
-import { pipeValidator, prop } from '@ducto/core';
-import { isNotNull, isString, hasLessCharacteresThan, minimalNumberOfProps } from '@ducto/validators';
-
-const descriptionPipeValidator = (description) => (
-  description
-    |> isNotNull
-    |> isString
-    |> hasLessCharacteresThan(1000)
+const validator = ducto(
+  isNotNull,
+  isString,
+  hasLessCharactersThan(100),
+  hasMoreCharactersThan(10),
 )
 
-class Toggle {
+try {
+  validator('mathiasgheno');
+  console.log('all ok');
+} catch (e) {
+  console.log(e.message);
+}
 
-  @ducto(toggle => (
-    toggle
-      |> prop('description', descriptionPipeValidator)
-      |> minimalNumberOfProps(10)
-  ))
-  insert(toggle) {
-    // throw error bebore execute function
-  }  
+try {
+  validator('mathias');
+} catch (e) {
+  console.log(e.message);
+  console.log(e.debug);
 }
 ```
