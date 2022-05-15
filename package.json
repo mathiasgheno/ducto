@@ -1,11 +1,12 @@
 {
   "name": "ducto",
   "version": "0.0.1",
+  "private": true,
   "description": "Next Generation Pipeline Validator",
   "main": "index.js",
   "scripts": {
     "test": "pnpm recursive run test",
-    "publish": "pnpm -r publish"
+    "publish": "pnpm -r publish --access public"
   },
   "repository": {
     "type": "git",
