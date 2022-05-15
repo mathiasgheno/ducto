@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mathiasgheno/duto.git"
+    "url": "git+https://github.com/mathiasgheno/ducto.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mathiasgheno/duto/issues"
+    "url": "https://github.com/mathiasgheno/ducto/issues"
   },
-  "homepage": "https://github.com/mathiasgheno/duto#readme",
+  "homepage": "https://github.com/mathiasgheno/ducto#readme",
   "dependencies": {
     "loglevel": "^1.8.0"
   }
