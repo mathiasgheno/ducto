@@ -6,8 +6,8 @@
 Ducto.js is an next generation of pipeline validator.
 
 - ✅ Functional API
-- ✅ Support for ECMAScript Pipeline Operator (WIP)
-- ✅ Support for ECMAScript Decorators  (WIP)
+- ✅ Support for ECMAScript Pipeline Operator
+- ✅ Support for ECMAScript Decorators
 
 ## Install
 
@@ -47,3 +47,9 @@ try {
   console.log(e.debug);
 }
 ```
+
+# General Documentation
+
+- [Avaliable Validators](/packages/validators/README.md);
+- [How to use with Decorators](/docs/how-decorators.md);
+- [How to use with Pipeline Operador](/docs/how-pipeline-operator.md);
