@@ -7,7 +7,7 @@ import {
 } from '@ducto/validators';
 import log from 'loglevel';
 
-// log.setLevel('debug');
+log.setLevel('debug');
 
 const validator = ducto(
   isNotNull,

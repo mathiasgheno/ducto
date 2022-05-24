@@ -2,7 +2,7 @@
   "name": "@ducto/validators",
   "version": "0.0.1",
   "description": "Validators of ducto library",
-  "main": "index.js",
+  "main": "src/index.js",
   "type": "module",
   "scripts": {
     "test": ""

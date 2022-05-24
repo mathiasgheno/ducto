@@ -18,13 +18,13 @@ npm install @ducto/core @ducto/validators
 ## How to Use
 
 ```javascript
-import { ducto } from '@ducto/core';
+import {ducto} from '@ducto/core';
 import {
   isString,
   isNotNull,
   hasLessCharactersThan,
   hasMoreCharactersThan,
-} from '@ducto/validators';
+} from 'packages/validators/src/index';
 
 const validator = ducto(
   isNotNull,

@@ -5,7 +5,7 @@ export const hasMoreCharactersThan = (desired) => (value) => {
   log.debug(value);
   const size = value?.length;
   if(size < desired) {
-    throw new Error(`Value is not more then ${desired} characters`);
+    throw new Error(`Value is not more than ${desired} characters`);
   }
   return value;
 }
