@@ -51,5 +51,5 @@ try {
 # General Documentation
 
 - [Avaliable Validators](/packages/validators/README.md);
-- [How to use with Decorators](/docs/how-decorators.md);
 - [How to use with Pipeline Operador](/docs/how-pipeline-operator.md);
+- [How to use with Decorators](/docs/how-decorators.md);

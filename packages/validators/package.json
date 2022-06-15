@@ -2,10 +2,11 @@
   "name": "@ducto/validators",
   "version": "0.0.1",
   "description": "Validators of ducto library",
-  "main": "src/index.js",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
   "type": "module",
   "scripts": {
-    "test": ""
+    "build": "node scripts/build.js"
   },
   "repository": {
     "type": "git",

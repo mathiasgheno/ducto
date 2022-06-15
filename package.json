@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/mathiasgheno/ducto#readme",
   "dependencies": {
+    "esbuild": "^0.14.43",
     "loglevel": "^1.8.0"
   }
 }
