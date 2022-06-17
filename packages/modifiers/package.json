@@ -1,0 +1,28 @@
+{
+  "name": "@ducto/modifiers",
+  "version": "0.0.1",
+  "description": "Modifiears of Ducto.js library",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathiasgheno/ducto.git"
+  },
+  "keywords": [
+    "ducto",
+    "validators"
+  ],
+  "author": "Mathias Gheno Azzolini",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mathiasgheno/ducto/issues"
+  },
+  "homepage": "https://github.com/mathiasgheno/ducto#readme",
+  "dependencies": {
+    "loglevel": "^1.8.0"
+  }
+}

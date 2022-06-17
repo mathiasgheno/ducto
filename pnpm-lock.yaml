@@ -26,6 +26,7 @@ importers:
       '@babel/preset-env': ^7.18.2
       '@ducto/core': workspace:^0.0.1
       '@ducto/validators': workspace:^0.0.1
+      core-js: ^3.23.1
     dependencies:
       '@babel/cli': 7.17.10_@babel+core@7.18.5
       '@babel/core': 7.18.5
@@ -33,9 +34,16 @@ importers:
       '@babel/preset-env': 7.18.2_@babel+core@7.18.5
       '@ducto/core': link:../../packages/core
       '@ducto/validators': link:../../packages/validators
+      core-js: 3.23.1
 
   packages/core:
     specifiers: {}
+
+  packages/modifiers:
+    specifiers:
+      loglevel: ^1.8.0
+    dependencies:
+      loglevel: 1.8.0
 
   packages/validators:
     specifiers:
@@ -1428,6 +1436,11 @@ packages:
     dependencies:
       browserslist: 4.20.4
       semver: 7.0.0
+    dev: false
+
+  /core-js/3.23.1:
+    resolution: {integrity: sha512-wfMYHWi1WQjpgZNC9kAlN4ut04TM9fUTdi7CqIoTVM7yaiOUQTklOzfb+oWH3r9edQcT3F887swuVmxrV+CC8w==}
+    requiresBuild: true
     dev: false
 
   /debug/4.3.4:
