@@ -10,4 +10,3 @@ export const omitProperties = (...props) => (obj) => {
     return acc;
   }, {...obj});
 }
-
