@@ -1,5 +1,7 @@
-export { isString } from './string/isString.js';
-export { isNotNull } from './general/isNotNull.js';
-export { hasLessCharactersThan } from './string/hasLessCharactersThan.js';
-export { hasMoreCharactersThan } from './string/hasMoreCharactersThan.js';
-export { isNumber } from './number/isNumber.js';
+export { isString } from './string/isString/isString.js';
+export { hasLessCharactersThan } from './string/hasLessCharactersThan/hasLessCharactersThan.js';
+export { hasMoreCharactersThan } from './string/hasMoreCharactersThan/hasMoreCharactersThan.js';
+export { isNumber } from './number/isNumber/isNumber.js';
+export { isNotUndefined } from './general/isNotUndefined/isNotUndefined.js';
+export { isNotNullish } from './general/isNotNullish/isNotNullish.js';
+export { isNotNull } from './general/isNotNull/isNotNull.js';
