@@ -16,7 +16,7 @@ const reducer = (value, validator, index) => {
     throw new ValidatorError(error, {
       validator: validator.name,
       receivedValue: value,
-      valodatorQueue: index,
+      validatorQueue: index,
     });
   }
 };
