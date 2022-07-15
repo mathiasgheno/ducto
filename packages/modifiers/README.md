@@ -11,7 +11,8 @@ npm install @ducto/modifiers
 ## Avaliable Functions
 
 ### For Objects
-- [`pickProperties`](/packages/modifiers/src/object/pickProperties/pickProperties.js)
-- [`pickProperty`](/packages/modifiers/src/object/pickProperty/pickProperty.md)
-- [`omitProperties`](/packages/modifiers/src/object/omitProperties/omitProperties.md)
-- [`omitProperty`](/packages/modifiers/src/object/omitProterty/omitProperty.md)
+- [`pickProperties`](/packages/modifiers/src/object/pickProperties/README.md)
+- [`pickProperty`](/packages/modifiers/src/object/pickProperty/README.md)
+- [`omitProperties`](/packages/modifiers/src/object/omitProperties/README.md)
+- [`omitProperty`](/packages/modifiers/src/object/omitProterty/README.md)
+- [`removeUndefinedProperties`](/packages/modifiers/src/object/removeUndefinedProperties/README.md)
