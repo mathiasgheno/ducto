@@ -4,10 +4,12 @@ importers:
 
   .:
     specifiers:
+      '@types/jest': ^28.1.5
       esbuild: ^0.14.43
       jest: ^28.1.2
       loglevel: ^1.8.0
     dependencies:
+      '@types/jest': 28.1.5
       esbuild: 0.14.43
       jest: 28.1.2
       loglevel: 1.8.0
@@ -1608,6 +1610,13 @@ packages:
     resolution: {integrity: sha512-c3mAZEuK0lvBp8tmuL74XRKn1+y2dcwOUpH7x4WrF6gk1GIgiluDRgMYQtw2OFcBvAJWlt6ASU3tSqxp0Uu0Aw==}
     dependencies:
       '@types/istanbul-lib-report': 3.0.0
+    dev: false
+
+  /@types/jest/28.1.5:
+    resolution: {integrity: sha512-TLAC2zXxGnohSP3GxgIyJn7yrTeRPDEyVFyCY1NE2wzg392auI+69uk5EPGjUXuhkq/K208J/TWpLG7J8ebIEQ==}
+    dependencies:
+      jest-matcher-utils: 28.1.1
+      pretty-format: 28.1.1
     dev: false
 
   /@types/node/18.0.2:
