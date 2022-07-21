@@ -1,12 +1,12 @@
 
 <p align="center">
-  <img alt="Lerna" src="https://i.imgur.com/p70zxaD.png" width="480">
+  <img alt="Ducto" src="https://i.imgur.com/p70zxaD.png" width="480">
 </p>
 
 Ducto.js is an next generation of pipeline validator.
 
 - ✅ Functional API
-- ✅ Support for ECMAScript Pipeline Operator (wip)
+- ✅ Support for ECMAScript Pipeline Operator ([see docs](/docs/how-pipeline-operator.md))
 - ✅ Support for ECMAScript Decorators (wip)
 
 ## Install
@@ -17,14 +17,16 @@ npm install @ducto/core @ducto/validators
 
 ## How to Use
 
+In ducto you can provide multiples validators and if one of them fails, the whole pipeline fails. This approach is very useful when you want to validate a pipeline step by step.
+
 ```javascript
-import {ducto} from '@ducto/core';
+import { ducto } from '@ducto/core';
 import {
   isString,
   isNotNull,
   hasLessCharactersThan,
   hasMoreCharactersThan,
-} from 'packages/validators/src/index';
+} from '@ducto/validators';
 
 const validator = ducto(
   isNotNull,
