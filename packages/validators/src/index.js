@@ -7,3 +7,4 @@ export { isNotNullish } from './general/isNotNullish/isNotNullish.js';
 export { isNotNull } from './general/isNotNull/isNotNull.js';
 export { hasSameLengthOf } from './general/hasSameLengthOf/hasSameLengthOf.js';
 export { hasSpecialCharacter } from './string/hasSpecialCharacter/hasSpecialCharacter.js';
+export { hasSameTypeOf } from './general/hasSameTypeOf/hasSameTypeOf.js';

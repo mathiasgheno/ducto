@@ -50,6 +50,10 @@ try {
 }
 ```
 
+[//]: # (But, you can use the `ducto` to list all the errors. This approach can be helpful when you want to show the user all the errors, like when you have a list of demands for password.)
+
+[//]: # ()
+
 # General Documentation
 
 - [Avaliable Validators](/packages/validators/README.md);
