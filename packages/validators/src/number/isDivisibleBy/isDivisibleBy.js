@@ -8,5 +8,3 @@ export const isDivisibleBy = (number) => (value) => {
   }
   return value;
 }
-
-// console.log(isDivisibleBy(5)(10));

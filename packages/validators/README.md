@@ -8,7 +8,13 @@ npm install @ducto/validators
 
 ## Avaliable Functions
 
+### General
 - [isNotNull](src/general/isNotNull/README.md)
 - [isNotNullish](src/general/isNotNullish/README.md)
+
+### Numbers
+- [isDivisableBy](src/number/isDivisibleBy/README.md)
+- [isPrecisionOf](src/number/isPrecisionOf/README.md);
+- [isNumber](src/number/isNumber/README.md)
 
 [//]: # (- [isNotUndefined]&#40;src/general/isNotUndefined/README.md&#41;)
