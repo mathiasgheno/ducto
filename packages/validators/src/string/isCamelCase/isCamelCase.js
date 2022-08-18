@@ -17,16 +17,21 @@ export const doesNotHaveUpperCaseCharSideBySide = (value) => {
 
 // TODO use pipe in the validations
 
+const pipe = (...fns) => (value) => fns.reduce((acc, fn) => fn(acc), value);
+
 export const isCamelCase = (value) => {
   if(!value) {
     throw new Error('Value is nullish');
   }
 
   try {
-    isNotNullish(value);
-    isLowerCaseAt(0)(value);
-    isLowerCaseAt(value.length - 1)(value);
-    doesNotHaveUpperCaseCharSideBySide(value);
+    const validator = pipe(
+      isNotNullish,
+      isLowerCaseAt(0),
+      isLowerCaseAt(value.length - 1),
+      doesNotHaveUpperCaseCharSideBySide,
+    );
+    validator(value);
   } catch {
     throw new Error('Value is not camel case');
   }
