@@ -1,45 +1,27 @@
 import { hasSameTypeOf } from './hasSameTypeOf.js';
 
 describe('hasSameTypeOf', () => {
-  describe('when only inputed strings', () => {
+  describe('when strings', () => {
     it('should throw an error if all arguments have different type', () => {
-      const array = ['1', '1'];
-      const result = hasSameTypeOf('number');
-      expect(() => result(...array)).toThrowError();
+      const result = hasSameTypeOf('string');
+      expect(() => result(1)).toThrowError();
     });
 
-    it('should return the original array if all the value have the same type', () => {
-      const array = ['1', '1'];
+    it('should not throw', () => {
       const result = hasSameTypeOf('string');
-      expect(result(...array)).toEqual(array);
+      expect(result('1')).toEqual('1');
     });
   })
 
-  describe('when mixed stings and numbers', () => {
-    it('should throw an error if all arguments have different type', () => {
-      const array = ['1', 1];
+  describe('when numbers', () => {
+    it('should throw for different type', () => {
       const result = hasSameTypeOf('number');
-      expect(() => result(...array)).toThrowError();
+      expect(() => result('1')).toThrowError();
     });
 
-    it('should return the original array if all the value have the same type', () => {
-      const array = ['1', 1];
-      const result = hasSameTypeOf('string');
-      expect(() => result(...array)).toThrowError();
-    });
-  });
-
-  describe('when only inputed numbers', () => {
-    it('should throw an error if all arguments have different type', () => {
-      const array = [1, 1];
-      const result = hasSameTypeOf('string');
-      expect(() => result(...array)).toThrowError();
-    });
-
-    it('should return the original array if all the value have the same type', () => {
-      const array = [1, 1];
+    it('should not throw', () => {
       const result = hasSameTypeOf('number');
-      expect(result(...array)).toEqual(array);
+      expect(result(1)).toEqual(1);
     });
   });
 });

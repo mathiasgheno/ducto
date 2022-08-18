@@ -1,16 +1,16 @@
 import log from 'loglevel';
 
 /**
- * @param {'number'|'string'|'array'|'object'|'boolean'|'undefined'} condition
- * @returns {function(...[*]): [*]}
+ * @param {string} type
+ * @returns {function(*): *}
  */
-export const hasSameTypeOf = (condition) => (...args) => {
+export const hasSameTypeOf = (type) => (value) => {
   log.info('hasSameTypeOf was been executed');
-  log.debug({ condition });
-  log.debug({ args });
-  const doesNot = args.some(arg => typeof arg !== condition);
+  log.debug({ type });
+  log.debug({ value });
+  const doesNot = typeof value !== type;
   if(doesNot) {
-    throw new Error(`All value different of: ${condition}`);
+    throw new Error(`All value different of: ${type}`);
   }
-  return args;
+  return value;
 }

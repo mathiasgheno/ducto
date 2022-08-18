@@ -2,8 +2,7 @@
 
 - 📣 Throw error if not satisfied
 - 📦 Curried Function
-- ♾️ Multiple Arguments
-
+- 🦺 Pure Function
 
 This validator checks if the value passed was argument will be the same as the argument of the first function. 
 
@@ -15,8 +14,8 @@ import { hasSameTypeOf } from '@ducto/validators';
 const movie1 = 'The Movie';
 const movie2 = 'The Years';
 
-[movie1, movie2]
-  |> hasSameLengthOf('number')(...#) // error
+movie1
+  |> hasSameLengthOf(movie2)(#) // not throw error
 
 ```
 
@@ -28,7 +27,5 @@ import { hasSameLengthOf } from '@ducto/validators';
 const movie1 = 'The Movie';
 const movie2 = 'The Years';
 
-const movies = [movie1, movie2]
-
-hasSameLengthOf('string')(movies);
+hasSameLengthOf(movie1)(movie2);
 ```
