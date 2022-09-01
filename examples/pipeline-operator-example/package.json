@@ -1,14 +1,14 @@
 {
   "name": "@ducto/pipeline-operator-example",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Example of how to use ducto with pipeline operator, powered by Babel",
   "private": true,
   "main": "index.js",
   "scripts": {
     "build": "babel src --out-dir lib"
   },
   "keywords": [],
-  "author": "",
+  "author": "Mathias Gheno<mathiasgheno@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "@babel/cli": "^7.17.10",

@@ -9,7 +9,7 @@
     "test": ""
   },
   "keywords": [],
-  "author": "",
+  "author": "Mathias Gheno<mathiasgheno@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "@ducto/core": "workspace:^0.0.1",

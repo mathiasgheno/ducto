@@ -23,6 +23,10 @@
     "@types/jest": "^28.1.5",
     "esbuild": "^0.14.43",
     "jest": "^28.1.2",
+    "lerna": "^5.5.0",
     "loglevel": "^1.8.0"
-  }
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }
