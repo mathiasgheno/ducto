@@ -1,6 +1,6 @@
-import { endWith } from 'endWith.js';
+import { endWith } from './endWith.js';
 
-describe('endWith', () => {
+fdescribe('endWith', () => {
   it('should return a function', () => {
     expect(typeof endWith('')).toBe('function');
   });
