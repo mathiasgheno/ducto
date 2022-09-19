@@ -3,10 +3,9 @@ import log from 'loglevel'
 export const isPrecisionOf = (precision) => (value) => {
   log.info('isPrecisionOf was called')
   log.debug(value)
-  if(Number.isNaN(value)) {
-    throw new Error('Value is not a number')
-  }
-  if(value.toString().split('.')[1].length > precision) {
+  let decimalDigits = value.toString().split('.')[1]?.length || 0;
+  console.log(decimalDigits)
+  if(decimalDigits !== precision) {
     throw new Error('Value is not a precision of ' + precision)
   }
   return value
