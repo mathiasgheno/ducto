@@ -3,6 +3,17 @@
   <img alt="Ducto" src="https://i.imgur.com/p70zxaD.png" width="480">
 </p>
 
+
+
+<div align="center">
+
+<a href="">[![Node.js Tests CI](https://github.com/mathiasgheno/ducto/actions/workflows/node.js-tests.yml/badge.svg?branch=main)](https://github.com/mathiasgheno/ducto/actions/workflows/node.js-tests.yml)
+</a>
+<a href="">
+<img alt="MIT Licensed" src="https://img.shields.io/github/license/mathiasgheno/ducto" />
+</a>
+</div>
+
 Ducto.js is an next generation of pipeline validator.
 
 - ✅ Functional API
