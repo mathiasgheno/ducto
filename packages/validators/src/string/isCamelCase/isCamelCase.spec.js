@@ -6,7 +6,7 @@ describe('isCamelCase', () => {
   });
 
   test('should throw error for CamelCase', () => {
-    expect(() => expect(isCamelCase('camelCase'))).toThrowError();
+    expect(() => expect(isCamelCase('CamelCase'))).toThrowError();
   });
 
   test('should throw error for cameLCase', () => {
@@ -15,5 +15,17 @@ describe('isCamelCase', () => {
 
   test('should throw error for camelCASETest', () => {
     expect(() => expect(isCamelCase('camelCASETest'))).toThrowError();
+  });
+
+  test('should throw error for dash-case', () => {
+    expect(() => expect(isCamelCase('dash-case'))).toThrowError();
+  });
+
+  test('should throw error for underscore_case', () => {
+    expect(() => expect(isCamelCase('underscore_case'))).toThrowError();
+  });
+
+  test('should throw error for underscore_case / snake_case', () => {
+    expect(() => expect(isCamelCase('underscore_case'))).toThrowError();
   });
 });
