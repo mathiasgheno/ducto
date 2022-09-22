@@ -25,5 +25,7 @@ jobs:
         cache: 'npm'
     - name: Setup pnpm
       uses: pnpm/action-setup@v2.2.2
+      with:
+        version: latest
     - run: pnpm install
     - run: pnpm test
