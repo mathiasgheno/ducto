@@ -1,0 +1,6 @@
+ignore:
+  - .pnpm
+enabled: true
+pullRequestAlertsEnabled: true
+projectReportsEnabled: true
+beta: false
