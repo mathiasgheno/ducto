@@ -3,8 +3,7 @@ import log from 'loglevel'
 export const isPrecisionOf = (precision) => (value) => {
   log.info('isPrecisionOf was called')
   log.debug(value)
-  let decimalDigits = value.toString().split('.')[1]?.length || 0;
-  console.log(decimalDigits)
+  let decimalDigits = value.toString().split('.')[1]?.length || 0
   if(decimalDigits !== precision) {
     throw new Error('Value is not a precision of ' + precision)
   }

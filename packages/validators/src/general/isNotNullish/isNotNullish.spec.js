@@ -1,7 +1,4 @@
 import { isNotNullish } from './isNotNullish.js';
-import loglevel from 'loglevel';
-
-loglevel.setLevel('debug');
 
 describe('isNotNullish', () => {
   test('should return value for non-nullish value', () => {

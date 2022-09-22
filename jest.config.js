@@ -1,7 +1,11 @@
+import loglevel, {getLogger} from 'loglevel';
+
 /*
  * For a detailed explanation regarding each configuration property, visit:
  * https://jestjs.io/docs/configuration
  */
+
+loglevel.setLevel('error');
 
 module.exports = {
   clearMocks: true,
