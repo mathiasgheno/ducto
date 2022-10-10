@@ -15,7 +15,15 @@
     "url": "git+https://github.com/mathiasgheno/ducto.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Mathias Gheno<mathiasgheno@gmail.com>",
+  "system": {
+    "node": ">=12.0.0",
+    "npm": ">=6.0.0"
+  },
+  "os": [
+    "!win32",
+    "linux"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mathiasgheno/ducto/issues"
