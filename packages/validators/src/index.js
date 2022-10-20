@@ -16,3 +16,8 @@ export { hasSameTypeOf } from './general/hasSameTypeOf/hasSameTypeOf.js';
 export { isNumber } from './number/isNumber/isNumber.js';
 export { isDivisibleBy } from './number/isDivisibleBy/isDivisibleBy.js';
 export { isPrecisionOf } from './number/isPrecisionOf/isPrecisionOf.js';
+
+// Object
+export { isNotNullProperty } from './object/isNotNullProperty/isNotNullProperty.js';
+export { isNotUndefinedProperty } from './object/isNotUndefinedProperty/isNotUndefinedProperty.js';
+export { isNotNullishProperty } from './object/isNotNullishProperty/isNotNullishProperty.js';
