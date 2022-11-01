@@ -1,7 +1,7 @@
 import { isNotNullishProperty } from './isNotNullishProperty.js';
 
 describe('isNotNullishProperty', () => {
-  it('should return object', () => {
+  it('should return object and not throw error', () => {
     const obj = { a: 1 };
     const result = isNotNullishProperty('a')(obj);
     expect(result).toBe(obj);
@@ -14,7 +14,6 @@ describe('isNotNullishProperty', () => {
 
   it('should throw error for null', () => {
     const obj = { a: null };
-    const result = isNotNullishProperty('a')(obj);
-    expect(result).toBe(obj);
+    expect(() => isNotNullishProperty('a')(obj)).toThrowError();
   });
 });
