@@ -24,5 +24,6 @@ npm install @ducto/validators
 - [isNotNullishProperty](src/object/isNotNullishProperty/README.md)
 - [isNotNullProperty](src/object/isNotNullProperty/README.md)
 - [isNotUndefinedProperty](src/object/isNotUndefinedProperty/README.md)
+- [isObject](src/object/isObject/README.md)
 
 [//]: # (- [isNotUndefined]&#40;src/general/isNotUndefined/README.md&#41;)

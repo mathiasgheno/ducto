@@ -31,6 +31,7 @@
   "homepage": "https://github.com/mathiasgheno/ducto#readme",
   "dependencies": {
     "@types/jest": "^28.1.5",
+    "@types/node": "^18.11.8",
     "esbuild": "^0.14.43",
     "jest": "^28.1.2",
     "lerna": "^5.5.0",
