@@ -1,8 +1,8 @@
 import log from 'loglevel';
 
 /**
- * @param {string} type
- * @returns {function(*): *}
+ * @nosideeffects
+ * @type {import('./hasSameTypeOf.types').HasSameTypeOf}
  */
 export const hasSameTypeOf = (type) => (value) => {
   log.info('hasSameTypeOf was been executed');
