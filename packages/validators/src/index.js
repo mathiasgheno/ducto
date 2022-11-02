@@ -4,6 +4,7 @@ export { hasLessCharactersThan } from './string/hasLessCharactersThan/hasLessCha
 export { hasMoreCharactersThan } from './string/hasMoreCharactersThan/hasMoreCharactersThan.js';
 export { hasSpecialCharacter } from './string/hasSpecialCharacter/hasSpecialCharacter.js';
 export { startWith } from './string/startWith/startWith.js';
+export { contains } from './string/contains/contains.js';
 
 // General
 export { isNotUndefined } from './general/isNotUndefined/isNotUndefined.js';
