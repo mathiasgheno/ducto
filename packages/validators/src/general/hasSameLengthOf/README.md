@@ -1,6 +1,6 @@
 # hasSameLengthOf
 
-This validator checks if the length of the given value is the same as the length of the given other value.
+This validator checks if the length of the given value is the same as the length of the given other value. It is compatible with types: `string`, `array`, `Map` and `Set`.
 
 #### Example Using Pipeline Operator
 
@@ -11,7 +11,7 @@ const movie = 'The Movie';
 const years = 'The Years';
 
 movie
-  |> hasSameLengthOf(years)(#) // true
+  |> hasSameLengthOf(years)(#) // not throw
 
 ```
 
@@ -23,5 +23,5 @@ import { hasSameLengthOf } from '@ducto/validators';
 const movie = 'The Movie';
 const years = 'The Years';
 
-hasSameLengthOf(years)(movie); // true
+hasSameLengthOf(years)(movie); // not throw
 ```
