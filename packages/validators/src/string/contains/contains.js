@@ -5,5 +5,3 @@ export const contains = (value) => subject => {
   }
   return subject;
 }
-
-contains('fsoo')('foo bar baz');

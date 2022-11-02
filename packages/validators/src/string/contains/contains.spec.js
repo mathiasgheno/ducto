@@ -1,8 +1,9 @@
-import { contains } from './constains.js';
+import { contains } from './contains.js';
 
 describe('constains', () => {
   it('should return an error', () => {
-    expect(() => contains('fsoo')('foo bar baz')).toThrow();
+    const containsFoo = contains('foo');
+    expect(() => containsFoo('abcd')).toThrow();
   });
 
   it('should not return an error', () => {
