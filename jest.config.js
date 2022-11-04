@@ -7,6 +7,9 @@ import loglevel, {getLogger} from 'loglevel';
 
 loglevel.setLevel('error');
 
+/**
+ * @type {import('@jest/types').Config.InitialOptions}
+ */
 module.exports = {
   clearMocks: true,
   collectCoverage: true,
