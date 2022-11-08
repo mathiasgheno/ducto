@@ -22,8 +22,8 @@ importers:
 
   examples/esm-example:
     specifiers:
-      '@ducto/core': workspace:^0.0.2
-      '@ducto/validators': workspace:^0.0.2
+      '@ducto/core': workspace:^0.0.3
+      '@ducto/validators': workspace:^0.0.3
     dependencies:
       '@ducto/core': link:../../packages/core
       '@ducto/validators': link:../../packages/validators
@@ -34,8 +34,8 @@ importers:
       '@babel/core': ^7.18.5
       '@babel/plugin-proposal-pipeline-operator': ^7.18.2
       '@babel/preset-env': ^7.18.2
-      '@ducto/core': workspace:^0.0.2
-      '@ducto/validators': workspace:^0.0.2
+      '@ducto/core': workspace:^0.0.3
+      '@ducto/validators': workspace:^0.0.3
       core-js: ^3.23.1
     dependencies:
       '@babel/cli': 7.17.10_@babel+core@7.18.5

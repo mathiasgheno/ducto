@@ -1,6 +1,6 @@
 {
   "name": "@ducto/pipeline-operator-example",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Example of how to use ducto with pipeline operator, powered by Babel",
   "private": true,
   "main": "index.js",
@@ -15,8 +15,8 @@
     "@babel/core": "^7.18.5",
     "@babel/plugin-proposal-pipeline-operator": "^7.18.2",
     "@babel/preset-env": "^7.18.2",
-    "@ducto/core": "workspace:^0.0.2",
-    "@ducto/validators": "workspace:^0.0.2",
+    "@ducto/core": "workspace:^0.0.3",
+    "@ducto/validators": "workspace:^0.0.3",
     "core-js": "^3.23.1"
   }
 }
