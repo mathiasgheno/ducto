@@ -14,11 +14,12 @@
 </a>
 </div>
 
-Ducto.js is an next generation of pipeline validator.
+Ducto.js is a collection of functions do validation and modification of data throught pipelining.
 
 - ✅ Functional API
 - ✅ Support for ECMAScript Pipeline Operator ([see docs](/docs/how-pipeline-operator.md))
-- ✅ Support for ECMAScript Decorators (wip)
+
+[//]: # (- ✅ Support for ECMAScript Decorators &#40;wip&#41;)
 
 ## Install
 
@@ -61,6 +62,24 @@ try {
 }
 ```
 
+You can alse use it with the Pipeline Operator. Please [see the docs](/docs/how-pipeline-operator.md).
+
+```javascript
+import {
+  isString,
+  isNotNull,
+  hasLessCharactersThan,
+  hasMoreCharactersThan,
+} from '@ducto/validators';
+
+'mathiasgheno'
+  |> isNotNull(#)
+  |> isString(#)
+  |> hasLessCharactersThan(100)(#)
+  |> hasMoreCharactersThan(10)(#)
+```
+
+
 [//]: # (But, you can use the `ducto` to list all the errors. This approach can be helpful when you want to show the user all the errors, like when you have a list of demands for password.)
 
 [//]: # ()
@@ -68,5 +87,6 @@ try {
 # General Documentation
 
 - [Avaliable Validators](/packages/validators/README.md);
+- [Avaliable Modifiers](/packages/modifiers/README.md);
 - [How to use with Pipeline Operador](/docs/how-pipeline-operator.md);
 - [How to use with Decorators](/docs/how-decorators.md);
