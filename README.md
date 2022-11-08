@@ -14,7 +14,7 @@
 </a>
 </div>
 
-Ducto.js is a collection of functions do validation and modification of data throught pipelining.
+Ducto.js is a collection of functions for validation and modification of data throught pipelining. 
 
 - ✅ Functional API
 - ✅ Support for ECMAScript Pipeline Operator ([see docs](/docs/how-pipeline-operator.md))
@@ -89,4 +89,5 @@ import {
 - [Avaliable Validators](/packages/validators/README.md);
 - [Avaliable Modifiers](/packages/modifiers/README.md);
 - [How to use with Pipeline Operador](/docs/how-pipeline-operator.md);
-- [How to use with Decorators](/docs/how-decorators.md);
+
+[//]: # (- [How to use with Decorators]&#40;/docs/how-decorators.md&#41;;)
