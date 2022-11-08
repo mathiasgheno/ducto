@@ -1,4 +1,4 @@
-import loglevel, {getLogger} from 'loglevel';
+import loglevel from 'loglevel';
 
 /*
  * For a detailed explanation regarding each configuration property, visit:
