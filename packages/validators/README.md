@@ -26,4 +26,16 @@ npm install @ducto/validators
 - [isNotUndefinedProperty](src/object/isNotUndefinedProperty/README.md)
 - [isObject](src/object/isObject/README.md)
 
+### String
+- [contains](src/string/contains/README.md);
+- [endWith](src/string/endWith/README.md);
+- [hasLessCharactersThan](src/string/hasLessCharactersThan/README.md);
+- [hasMoreCharactersThan](src/string/hasMoreCharactersThan/README.md);
+- [isCamelCase](src/string/isCamelCase/README.md);
+- [isDashCase](src/string/isDashCase/README.md);
+- [isLowerCase](src/string/isLowerCase/README.md);
+- [isString](src/string/isString/README.md);
+- [startWith](src/string/startWith/README.md);
+
+
 [//]: # (- [isNotUndefined]&#40;src/general/isNotUndefined/README.md&#41;)
