@@ -1,10 +1,13 @@
-export const endWith = (endValue) => (value) => {
-  if (typeof value !== 'string') {
-    throw new Error(`The value ${value} is not a string`);
+/**
+ * @type {import('./endWith.types').EndWith }
+ */
+export const endWith = (value) => (subject) => {
+  if (typeof subject !== 'string') {
+    throw new Error(`The value ${subject} is not a string`);
   }
-  const itDoes = value.match(new RegExp(`${endValue}$`));
+  const itDoes = subject.match(new RegExp(`${value}$`));
   if (!itDoes) {
-    throw new Error(`The value ${value} does not end with ${endValue}`);
+    throw new Error(`The value ${subject} does not end with ${value}`);
   }
-  return value;
+  return subject;
 };

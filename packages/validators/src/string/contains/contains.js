@@ -1,7 +1,9 @@
-
-export const contains = (value) => subject => {
-  if(!subject.match(value)) {
-    throw new Error(`"${subject}" does not have value ${value}`);
+/**
+ * @type {import('./contains.types').Contains}
+ */
+export const contains = (match) => subject => {
+  if(!subject.match(match)) {
+    throw new Error(`"${subject}" does not have value ${match}`);
   }
   return subject;
 }
