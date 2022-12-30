@@ -6,6 +6,8 @@ export { hasSpecialCharacter } from './string/hasSpecialCharacter/hasSpecialChar
 export { startWith } from './string/startWith/startWith.js';
 export { contains } from './string/contains/contains.js';
 export { isDashCase } from './string/isDashCase/isDashCase.js';
+export { isPascalCase } from './string/isPascalCase/isPascalCase.js';
+export { isLowerCase } from './string/isLowerCase/isLowerCase.js';
 
 // General
 export { isNotUndefined } from './general/isNotUndefined/isNotUndefined.js';

@@ -1,4 +1,5 @@
 /**
+ * @nosideeffects
  * @type {import('./isLowerCase.types').IsLowerCase}
  */
 export const isLowerCase = (value) => {
