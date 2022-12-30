@@ -1,4 +1,6 @@
 import { isNotNullish } from '../../general/isNotNullish/isNotNullish.js';
+import { pipe } from '../../shared/utils/validators.utils.js';
+import { doesNotHaveSpecialChar } from '../doesNotHaveSpecialChar/doesNotHaveSpecialChar.js';
 
 export const isLowerCaseAt = (charIndex = 1) => (value) => {
   const charValue = value[charIndex];
@@ -16,26 +18,6 @@ export const doesNotHaveUpperCaseCharSideBySide = (value) => {
   return value;
 }
 
-export const doesNotHaveDash = (value) => {
-  const regex = /-/g;
-  if(value.match(regex)) {
-    throw new Error('Value has dash');
-  }
-  return value;
-}
-
-export const doesNotHaveUnderscore = (value) => {
-  const regex = /_/g;
-  if(value.match(regex)) {
-    throw new Error('Value has underscore');
-  }
-  return value;
-}
-
-// TODO use pipe in the validations
-
-const pipe = (...fns) => (value) => fns.reduce((acc, fn) => fn(acc), value);
-
 export const isCamelCase = (value) => {
   if(!value) {
     throw new Error('Value is nullish');
@@ -44,11 +26,10 @@ export const isCamelCase = (value) => {
   try {
     const validator = pipe(
       isNotNullish,
-      doesNotHaveDash,
-      doesNotHaveUnderscore,
       isLowerCaseAt(0),
       isLowerCaseAt(value.length - 1),
       doesNotHaveUpperCaseCharSideBySide,
+      doesNotHaveSpecialChar,
     );
     validator(value);
   } catch (e) {
