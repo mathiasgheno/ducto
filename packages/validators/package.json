@@ -1,6 +1,6 @@
 {
   "name": "@ducto/validators",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Validators of ducto library",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",

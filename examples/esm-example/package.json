@@ -1,6 +1,6 @@
 {
   "name": "@ducto/esm-examples",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "private": true,
   "type": "module",
@@ -12,7 +12,7 @@
   "author": "Mathias Gheno<mathiasgheno@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "@ducto/core": "workspace:^0.0.4",
-    "@ducto/validators": "workspace:^0.0.4"
+    "@ducto/core": "workspace:^0.0.5",
+    "@ducto/validators": "workspace:^0.0.5"
   }
 }
