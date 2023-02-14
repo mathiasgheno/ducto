@@ -34,6 +34,7 @@ npm install @ducto/validators
 - [isCamelCase](src/string/isCamelCase/README.md);
 - [isDashCase](src/string/isDashCase/README.md);
 - [isLowerCase](src/string/isLowerCase/README.md);
+- [isUpperCase](src/string/isUpperCase/README.md);
 - [isString](src/string/isString/README.md);
 - [startWith](src/string/startWith/README.md);
 
