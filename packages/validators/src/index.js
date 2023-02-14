@@ -8,6 +8,7 @@ export { contains } from './string/contains/contains.js';
 export { isDashCase } from './string/isDashCase/isDashCase.js';
 export { isPascalCase } from './string/isPascalCase/isPascalCase.js';
 export { isLowerCase } from './string/isLowerCase/isLowerCase.js';
+export { isUpperCase } from './string/isUpperCase/isUpperCase.js';
 
 // General
 export { isNotUndefined } from './general/isNotUndefined/isNotUndefined.js';
