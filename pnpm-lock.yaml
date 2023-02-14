@@ -22,8 +22,8 @@ importers:
 
   examples/esm-example:
     specifiers:
-      '@ducto/core': workspace:^0.0.3
-      '@ducto/validators': workspace:^0.0.3
+      '@ducto/core': workspace:^0.0.4
+      '@ducto/validators': workspace:^0.0.4
     dependencies:
       '@ducto/core': link:../../packages/core
       '@ducto/validators': link:../../packages/validators
@@ -34,8 +34,8 @@ importers:
       '@babel/core': ^7.18.5
       '@babel/plugin-proposal-pipeline-operator': ^7.18.2
       '@babel/preset-env': ^7.18.2
-      '@ducto/core': workspace:^0.0.3
-      '@ducto/validators': workspace:^0.0.3
+      '@ducto/core': workspace:^0.0.4
+      '@ducto/validators': workspace:^0.0.4
       core-js: ^3.23.1
     dependencies:
       '@babel/cli': 7.17.10_@babel+core@7.18.5
@@ -1601,7 +1601,6 @@ packages:
       pacote: 13.6.2
       semver: 7.3.7
     transitivePeerDependencies:
-      - bluebird
       - supports-color
     dev: false
 
@@ -1632,7 +1631,6 @@ packages:
       p-waterfall: 2.1.1
       semver: 7.3.7
     transitivePeerDependencies:
-      - bluebird
       - supports-color
     dev: false
 
@@ -1771,7 +1769,6 @@ packages:
       validate-npm-package-name: 4.0.0
       yargs-parser: 20.2.4
     transitivePeerDependencies:
-      - bluebird
       - supports-color
     dev: false
 
@@ -1970,7 +1967,6 @@ packages:
       npm-registry-fetch: 13.3.1
       npmlog: 6.0.2
     transitivePeerDependencies:
-      - bluebird
       - supports-color
     dev: false
 
@@ -2000,7 +1996,6 @@ packages:
       pify: 5.0.0
       read-package-json: 5.0.2
     transitivePeerDependencies:
-      - bluebird
       - supports-color
     dev: false
 
@@ -2039,7 +2034,6 @@ packages:
       npmlog: 6.0.2
       tar: 6.1.11
     transitivePeerDependencies:
-      - bluebird
       - supports-color
     dev: false
 
@@ -2139,7 +2133,6 @@ packages:
       pacote: 13.6.2
       semver: 7.3.7
     transitivePeerDependencies:
-      - bluebird
       - encoding
       - supports-color
     dev: false
@@ -2186,7 +2179,6 @@ packages:
       npmlog: 6.0.2
       p-queue: 6.6.2
     transitivePeerDependencies:
-      - bluebird
       - supports-color
     dev: false
 
@@ -2288,7 +2280,6 @@ packages:
       slash: 3.0.0
       write-json-file: 4.3.0
     transitivePeerDependencies:
-      - bluebird
       - encoding
       - supports-color
     dev: false
@@ -2368,7 +2359,6 @@ packages:
       treeverse: 2.0.0
       walk-up-path: 1.0.0
     transitivePeerDependencies:
-      - bluebird
       - supports-color
     dev: false
 
@@ -2393,8 +2383,6 @@ packages:
       promise-retry: 2.0.1
       semver: 7.3.7
       which: 2.0.2
-    transitivePeerDependencies:
-      - bluebird
     dev: false
 
   /@npmcli/installed-package-contents/1.0.7:
@@ -2425,7 +2413,6 @@ packages:
       pacote: 13.6.2
       semver: 7.3.7
     transitivePeerDependencies:
-      - bluebird
       - supports-color
     dev: false
 
@@ -2470,7 +2457,6 @@ packages:
       read-package-json-fast: 2.0.3
       which: 2.0.2
     transitivePeerDependencies:
-      - bluebird
       - supports-color
     dev: false
 
@@ -3127,8 +3113,6 @@ packages:
       ssri: 9.0.1
       tar: 6.1.11
       unique-filename: 2.0.1
-    transitivePeerDependencies:
-      - bluebird
     dev: false
 
   /call-bind/1.0.2:
@@ -5270,7 +5254,6 @@ packages:
     transitivePeerDependencies:
       - '@swc-node/register'
       - '@swc/core'
-      - bluebird
       - encoding
       - supports-color
     dev: false
@@ -5289,7 +5272,6 @@ packages:
       npm-package-arg: 9.1.0
       npm-registry-fetch: 13.3.1
     transitivePeerDependencies:
-      - bluebird
       - supports-color
     dev: false
 
@@ -5303,7 +5285,6 @@ packages:
       semver: 7.3.7
       ssri: 9.0.1
     transitivePeerDependencies:
-      - bluebird
       - supports-color
     dev: false
 
@@ -5419,7 +5400,6 @@ packages:
       socks-proxy-agent: 7.0.0
       ssri: 9.0.1
     transitivePeerDependencies:
-      - bluebird
       - supports-color
     dev: false
 
@@ -5665,7 +5645,6 @@ packages:
       tar: 6.1.11
       which: 2.0.2
     transitivePeerDependencies:
-      - bluebird
       - supports-color
     dev: false
 
@@ -5805,7 +5784,6 @@ packages:
       npm-package-arg: 9.1.0
       proc-log: 2.0.1
     transitivePeerDependencies:
-      - bluebird
       - supports-color
     dev: false
 
@@ -6042,7 +6020,6 @@ packages:
       ssri: 9.0.1
       tar: 6.1.11
     transitivePeerDependencies:
-      - bluebird
       - supports-color
     dev: false
 
@@ -6210,11 +6187,6 @@ packages:
 
   /promise-inflight/1.0.1:
     resolution: {integrity: sha512-6zWPyEOFaQBJYcGMHBKTKJ3u6TBsnMFOIZSa6ce1e/ZrrsOlnHRHbabMjLiBYKp+n44X9eUI6VUPaukCXHuG4g==}
-    peerDependencies:
-      bluebird: '*'
-    peerDependenciesMeta:
-      bluebird:
-        optional: true
     dev: false
 
   /promise-retry/2.0.1:

@@ -7,8 +7,8 @@
   "scripts": {
     "test": "pnpm recursive run test",
     "publish": "pnpm -r publish --access public",
-    "version": "lerna version --conventional-commits --no-push --no-git-tag-version",
-    "version:pre": "lerna version --conventional-prerelease --no-push --no-git-tag-version"
+    "version": "lerna version --conventional-commits --no-push --no-git-tag-version --no-changelog",
+    "version:pre": "lerna version --conventional-prerelease --no-push --no-git-tag-version --no-changelog"
   },
   "repository": {
     "type": "git",

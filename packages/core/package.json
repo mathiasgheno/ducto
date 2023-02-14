@@ -1,6 +1,6 @@
 {
   "name": "@ducto/core",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Core functions for ducto",
   "main": "index.js",
   "type": "module",
