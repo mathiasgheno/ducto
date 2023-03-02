@@ -16,3 +16,4 @@ npm install @ducto/modifiers
 - [`omitProperties`](/packages/modifiers/src/object/omitProperties/README.md)
 - [`omitProperty`](/packages/modifiers/src/object/omitProterty/README.md)
 - [`removeUndefinedProperties`](/packages/modifiers/src/object/removeUndefinedProperties/README.md)
+- [`turnPropertiesValueIntoNumber`](/packages/modifiers/src/object/turnPropertiesValueIntoNumber/README.md)

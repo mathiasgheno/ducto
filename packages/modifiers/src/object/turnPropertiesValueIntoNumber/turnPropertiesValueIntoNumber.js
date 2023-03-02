@@ -1,8 +1,8 @@
 /**
  * @nosideeffects
- * @type{import('./turnPropertiesIntoNumber.types').TurnPropertiesIntoNumber}
+ * @type{import('./turnPropertiesValueIntoNumber.types').TurnPropertiesValueIntoNumber}
  */
-export const turnPropertiesIntoNumbers = (object) => {
+export const turnPropertiesValueIntoNumber = (object) => {
   const newObject = { ...object };
   Object.keys(newObject).forEach((key) => {
     if(typeof newObject[key] === 'string' && !isNaN(newObject[key])) {
