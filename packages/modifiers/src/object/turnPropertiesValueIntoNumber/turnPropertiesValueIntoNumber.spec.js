@@ -30,4 +30,40 @@ describe('turnPropertiesValueIntoNumber', () => {
       d: 'test',
     });
   });
+
+  it('should not turn properties value into number if they are not a number for multiple levels', () => {
+    const object = {
+      a: '1',
+      b: '2',
+      c: '3',
+      d: {
+        e: '4',
+        f: '5',
+        g: '6',
+        h: {
+          i: '7',
+          j: '8',
+          k: '9',
+          l: 'test',
+        },
+      },
+    };
+    const newObject = turnPropertiesValueIntoNumber(object);
+    expect(newObject).toEqual({
+      a: 1,
+      b: 2,
+      c: 3,
+      d: {
+        e: 4,
+        f: 5,
+        g: 6,
+        h: {
+          i: 7,
+          j: 8,
+          k: 9,
+          l: 'test',
+        },
+      },
+    });
+  })
 });

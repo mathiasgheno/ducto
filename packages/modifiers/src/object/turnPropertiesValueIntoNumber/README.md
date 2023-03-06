@@ -1,6 +1,6 @@
 # turnPropertiesValueIntoNumber
 
-This function is going to check if the value of the property is a number (like `'1'`) and and turn it into a number.
+This function is going to check if the value of the property is a number (like `'1'`) and and turn it into a number, recursively. 
 
 ### Using with Pipeline Operator
 
