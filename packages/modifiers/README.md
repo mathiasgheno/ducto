@@ -17,3 +17,6 @@ npm install @ducto/modifiers
 - [`omitProperty`](/packages/modifiers/src/object/omitProterty/README.md)
 - [`removeUndefinedProperties`](/packages/modifiers/src/object/removeUndefinedProperties/README.md)
 - [`turnPropertiesValueIntoNumber`](/packages/modifiers/src/object/turnPropertiesValueIntoNumber/README.md)
+
+### For Arrays
+- [`turnItemsIntoNumbers`](/packages/modifiers/src/array/turnItemsIntoNumbers/README.md)
