@@ -20,3 +20,4 @@ npm install @ducto/modifiers
 
 ### For Arrays
 - [`turnItemsIntoNumbers`](/packages/modifiers/src/array/turnItemsIntoNumbers/README.md)
+- [`turnItemsIntoStrings`](/packages/modifiers/src/array/turnItemsIntoStrings/README.md)

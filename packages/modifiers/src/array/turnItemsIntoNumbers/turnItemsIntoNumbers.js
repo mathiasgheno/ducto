@@ -1,6 +1,6 @@
 /**
  * @nosideeffects
- * @type {import('../../types').TurnItemsIntoNumbers}
+ * @type {import('./turnItemsIntoNumbers.types').TurnItemsIntoNumbers}
  */
 export const turnItemsIntoNumbers = (array) => {
   if(!Array.isArray(array)) {
