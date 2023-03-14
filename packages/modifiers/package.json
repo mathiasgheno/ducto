@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build.js",
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest removeNullishItems"
   },
   "repository": {
     "type": "git",

@@ -5,3 +5,4 @@ export { pickProperty } from './object/pickProperty/pickProperty.js';
 export { turnPropertiesValueIntoNumber } from './object/turnPropertiesValueIntoNumber/turnPropertiesValueIntoNumber.js';
 export { turnItemsIntoNumbers } from './array/turnItemsIntoNumbers/turnItemsIntoNumbers.js';
 export { turnItemsIntoStrings } from './array/turnItemsIntoStrings/turnItemsIntoStrings.js';
+export { removeNullishItems } from './array/removeNullishItems/removeNullishItems.js';
