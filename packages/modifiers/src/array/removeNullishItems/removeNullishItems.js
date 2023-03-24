@@ -12,7 +12,7 @@ export const removeNullishItems = (array) => {
       && item !== ''
       && item !== false
       && item !== 0
-      && item !== NaN
+      && !isNaN(item)
       && item !== Infinity
     ) {
       return item;
