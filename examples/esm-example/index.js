@@ -5,7 +5,13 @@ import {
   hasLessCharactersThan,
   hasMoreCharactersThan,
 } from '@ducto/validators';
+
+import {
+  removeNullishItems
+} from '@ducto/modifiers';
+
 import log from 'loglevel';
+import assert from 'node:assert';
 
 log.setLevel('debug');
 
@@ -16,16 +22,12 @@ const validator = ducto(
   hasMoreCharactersThan(10),
 )
 
-try {
-  validator('mathiasgheno');
-  console.log('all ok');
-} catch (e) {
-  console.log(e.message);
-}
+assert.throws(() => validator('mathiasgheno'));
 
-try {
-  validator('mathias');
-} catch (e) {
-  console.log(e.message);
-  console.log(e.debug);
-}
+assert.throws(() => validator('mathias'));
+
+const modifier = ducto(
+  removeNullishItems,
+);
+
+assert.deepStrictEqual(modifier([1, 2, 3, null, undefined]), [1, 2, 3]);
