@@ -22,7 +22,7 @@ const validator = ducto(
   hasMoreCharactersThan(10),
 )
 
-assert.throws(() => validator('mathiasgheno'));
+assert.doesNotThrow(() => validator('mathiasgheno'));
 
 assert.throws(() => validator('mathias'));
 
