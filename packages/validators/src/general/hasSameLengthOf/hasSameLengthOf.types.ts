@@ -4,3 +4,5 @@ export type HasSameLengthOf<
    | Map<unknown, unknown>
    | Set<unknown>
 > = (other: T) => (value: T) => T;
+
+declare const hasSameLengthOf: HasSameLengthOf;

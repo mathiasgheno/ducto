@@ -2,11 +2,22 @@
   "name": "@ducto/validators",
   "version": "0.0.5",
   "description": "Validators of ducto library",
-  "main": "dist/index.cjs",
-  "module": "dist/index.mjs",
+  "main": "dist/bundle.cjs.js",
+  "module": "dist/bundle.esm.js",
+  "browser": "dist/bundle.iife.js",
+  "types": "dist/types/index.d.ts",
   "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/bundle.esm.js",
+      "require": "./dist/bundle.cjs.js",
+      "browser": "./dist/bundle.iife.js",
+      "types": "./dist/types/index.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
   "scripts": {
-    "build": "node scripts/build.js",
+    "build": "node scripts/build.js && node scripts/types.js",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "repository": {
