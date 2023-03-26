@@ -1,5 +1,9 @@
 import log from 'loglevel';
 
+/**
+ * @nosideeffects
+ * @type {import('./isNotNull.types').IsNotNull}
+ */
 export const isNotNull = (value) => {
   log.info('isNotNull was called');
   log.debug(value);
