@@ -1,5 +1,9 @@
 import log from 'loglevel'
 
+/**
+ * @nosideeffects
+ * @type {import('./isPrecisionOf.types').IsPrecisionOf}
+ */
 export const isPrecisionOf = (precision) => (value) => {
   log.info('isPrecisionOf was called')
   log.debug(value)

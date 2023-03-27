@@ -1,5 +1,9 @@
 import log from 'loglevel';
 
+/**
+ * @nosideeffects
+ * @type {import('./isNumber.types').IsNumber}
+ */
 export const isNumber = (value) => {
   log.info('Executing isNumber');
   log.debug(value);
