@@ -7,7 +7,7 @@ import {
 } from '@ducto/validators';
 
 import {
-  removeNullishItems
+  removeNullishItems,
 } from '@ducto/modifiers';
 
 import log from 'loglevel';
